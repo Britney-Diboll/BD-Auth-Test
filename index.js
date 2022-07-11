@@ -1,5 +1,5 @@
 
-const netlifyIdentity = require('netlify-identity-widget');
+import{} from '@netlify/functions';
 
 netlifyIdentity.init({
   container: '#netlify-modal', // defaults to document.body
@@ -7,6 +7,8 @@ netlifyIdentity.init({
 });
 // Open the modal
 netlifyIdentity.open();
+
+
 
 // Get the current user:
 // Available after on('init') is invoked
