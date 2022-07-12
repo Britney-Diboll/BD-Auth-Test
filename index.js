@@ -4,7 +4,9 @@
 
 netlifyIdentity.on('init', () => {
   initUser = netlifyIdentity.currentUser();
-})
+});
+
+console.log(initUser);
 
 netlifyIdentity.on('login', () => {
   if (initUser == null) {
