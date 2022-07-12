@@ -18,6 +18,14 @@ netlifyIdentity.on('logout', () => {
   window.location.replace('/');
 });
 
+function logOut() {
+  debugger;
+  netlifyIdentity.on('logout', () => {
+    netlifyIdentity.close();
+    window.location.replace('/index');
+  });
+}
+
 // netlifyIdentity.init({
 //   container: '#netlify-modal', // defaults to document.body
 //   locale: 'en' // defaults to 'en'
