@@ -1,5 +1,5 @@
 
-import{} from '@netlify/functions';
+//import{} from '@netlify/functions';
 
 
 netlifyIdentity.on('init', () => {
