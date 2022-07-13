@@ -10,7 +10,7 @@ netlifyIdentity.on('init', () => {
 
 
 netlifyIdentity.on('login', () => {
-  if (initUser == null) {
+  if (initUser !== null) {
       window.location.replace('dashboard');
   }
   netlifyIdentity.close();
@@ -21,13 +21,6 @@ netlifyIdentity.on('logout', () => {
   window.location.replace('/');
 });
 
-function logOut() {
-  debugger;
-  netlifyIdentity.on('logout', () => {
-    netlifyIdentity.close();
-    window.location.replace('/index');
-  });
-}
 
 // netlifyIdentity.init({
 //   container: '#netlify-modal', // defaults to document.body
